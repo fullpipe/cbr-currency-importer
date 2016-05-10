@@ -15,7 +15,9 @@ class Importer
     {
         /* @var \SimpleXMLElement */
         $xmlData = simplexml_load_file($this->dataUrl);
-        $imports = array();
+        $imports = array(
+            new Currency('RUB', 1.0)
+        );
 
         /* @var $valute \SimpleXMLElement*/
         foreach ($xmlData->xpath('/ValCurs/Valute') as $valute) {
