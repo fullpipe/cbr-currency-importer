@@ -1,0 +1,22 @@
+{
+    "name": "fullpipe/cbr-currency-importer",
+    "type": "library",
+    "description": "The Central Bank of the Russian Federation currency importer",
+    "license": "MIT",
+    "keywords": [
+        "cbr", "currency", "importer"
+    ],
+    "authors": [
+        {
+            "name": "Eugene Bravov",
+            "email": "eugene.bravov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+    },
+    "autoload": {
+        "psr-0": { "Fullpipe\\CbrCurrency": "" }
+    },
+    "target-dir": "Fullpipe/CbrCurrency"
+}
