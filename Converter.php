@@ -85,9 +85,9 @@ class Converter
      */
     public function convert($amount)
     {
-        $fromRate = $this->getFrom()->getExchangeRate();
-        $toRate = $this->getTo()->getExchangeRate();
+        $fromRate = (float) $this->getFrom()->getExchangeRate();
+        $toRate = (float) $this->getTo()->getExchangeRate();
 
-        return $amount * $fromRate / $toRate;
+        return (float) $amount * $fromRate / $toRate;
     }
 }
