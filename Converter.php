@@ -79,7 +79,7 @@ class Converter
     /**
      * Convert.
      *
-     * @param number $amount
+     * @param int|float $amount
      *
      * @return float
      */
